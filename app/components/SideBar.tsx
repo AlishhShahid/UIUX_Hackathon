@@ -2,10 +2,11 @@ import React from "react";
 
 const SideBar = () => {
   return (
-    <div className="w-64 p-6 bg-gray-50 border-r border-gray-200 h-screen">
-
+    <div className="w-64 p-6 bg-gray-50 border-r border-gray-200 h-screen hidden sm:block ">
       <div>
-        <h3 className="text-xs font-semibold text-[#90A3BF] mb-6 uppercase">Type</h3>
+        <h3 className="text-xs font-semibold text-[#90A3BF] mb-6 uppercase">
+          Type
+        </h3>
         <ul className="space-y-4">
           {[
             { label: "Sport", count: 10 },
@@ -22,7 +23,8 @@ const SideBar = () => {
                   className="h-4 w-4 text-blue-500 border-gray-300 rounded focus:ring-blue-400"
                 />
                 <span className="ml-2 text-sm text-gray-700 font-medium">
-                  {type.label} <span className="text-[#90A3BF]">({type.count})</span>
+                  {type.label}{" "}
+                  <span className="text-[#90A3BF]">({type.count})</span>
                 </span>
               </label>
             </li>
