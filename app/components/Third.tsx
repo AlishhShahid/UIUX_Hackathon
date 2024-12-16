@@ -3,7 +3,7 @@ import DropoffSection from "./DropoffSection";
 
 function Third() {
   return (
-    <div className="flex items-center justify-between px-8 py-6 bg-white rounded-lg shadow-md w-full">
+    <div className="flex flex-col sm:flex-row items-center sm:justify-between px-1 py-2 sm:ml-20 bg-white rounded-lg shadow-md w-fit ml-5 ">
 
       <div className="flex-shrink-0">
         <PickupSection />
