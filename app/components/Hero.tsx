@@ -1,25 +1,23 @@
 function Hero() {
-    return (
-      <div className="w-full p-10 flex justify-between">
-      <div className="max-w-4xl mr-20 flex flex-row space-x-8">
-
+  return (
+    <div className="w-full p-10 flex flex-col sm:flex-row justify-between">
+      {/* Images Container */}
+      <div className="flex flex-col sm:flex-row sm:space-x-8 max-w-4xl">
+        {/* Ad 1 for small and large screens */}
         <img
           src="Ads 1.png"
           alt="Ad Image 1"
-          className="w-[610px] h-[325px] object-cover"
-          />
-  
+          className="w-full sm:w-[610px] h-auto sm:h-[325px] object-cover"
+        />
+        {/* Ad 2 visible only on large screens */}
         <img
           src="Ads 2.png"
           alt="Ad Image 2"
-          className="w-[610px] h-[325px] object-cover"
-          />
-        </div>
+          className="hidden sm:block w-[610px] h-[325px] object-cover"
+        />
       </div>
-    );
-  }
-  
-  export default Hero;
-  
+    </div>
+  );
+}
 
- 
+export default Hero;
