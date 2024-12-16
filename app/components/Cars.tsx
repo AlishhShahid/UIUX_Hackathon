@@ -1,15 +1,8 @@
 
-  
-
-
-
-
-
-
 function Cars() {
     return (
       <div className="p-6 bg-gray-100">
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid sm:grid-cols-3 grid-cols-1 gap-4">
           <div className="rounded-lg overflow-hidden shadow-md">
             <img src="/Catalog 1.png" alt="Catalog 01" className="w-full h-auto" />
           </div>
@@ -49,10 +42,3 @@ function Cars() {
   }
   
   export default Cars;
-  
-  
-
-
-
-
-
