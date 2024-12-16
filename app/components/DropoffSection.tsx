@@ -2,8 +2,8 @@ import { ChevronDown } from "lucide-react";
 
 function DropoffSection() {
     return (
-      <div className="flex flex-col items-start justify-start bg-white rounded-lg shadow-sm px-6 py-4 w-fit">
-        <div className="mb-4">
+      <div className="flex flex-col items-start justify-start bg-white rounded-lg shadow-sm px-1 py-1 w-fit">
+        <div className="mb-2">
           <div className="flex items-center space-x-2">
             <input
               type="radio"
@@ -31,7 +31,7 @@ function DropoffSection() {
             </div>
           </div>
   
-          <div className="w-px h-6 bg-gray-200 mx-4"></div>
+          <div className="w-px h-6 bg-gray-200 mx-1 sm:mx-4"></div>
 
           <div className="flex flex-col items-start">
             <span className="text-sm font-semibold text-gray-900">Date</span>
@@ -41,7 +41,7 @@ function DropoffSection() {
             </div>
           </div>
 
-          <div className="w-px h-6 bg-gray-200 mx-4"></div>
+          <div className="w-px h-6 bg-gray-200 mx-1 sm:mx-4"></div>
   
           <div className="flex flex-col items-start">
             <span className="text-sm font-semibold text-gray-900">Time</span>
