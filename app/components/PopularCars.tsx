@@ -1,12 +1,15 @@
+import Link from "next/link";
 function PopularCars() {
   return (
     <div className="px-8 py-6">
       {/* Header */}
       <div className="flex items-center justify-between mb-6">
         <h2 className="text-16px font-semibold text-[#90A3BF]">Popular Car</h2>
-        <button className="text-16px font-medium text-[#3563E9] hover:underline">
-          View All
-        </button>
+        <Link href={"/category"}>
+          <button className="text-16px font-medium text-[#3563E9] hover:underline">
+            View All
+          </button>
+        </Link>
       </div>
 
       {/* Grid with Single Column */}
