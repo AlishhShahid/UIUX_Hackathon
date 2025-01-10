@@ -1,10 +1,12 @@
 import Link from "next/link";
+import CarRentalCard from "./CarRentalCard";
+
 function PopularCars() {
   return (
     <div className="px-8 py-6">
-      {/* Header */}
       <div className="flex items-center justify-between mb-6">
         <h2 className="text-16px font-semibold text-[#90A3BF]">Popular Car</h2>
+
         <Link href={"/category"}>
           <button className="text-16px font-medium text-[#3563E9] hover:underline">
             View All
@@ -12,27 +14,41 @@ function PopularCars() {
         </Link>
       </div>
 
-      {/* Grid with Single Column */}
       <div className="grid grid-cols-1 sm:grid-cols-4 gap-6">
-        <img
-          src="/Catalog 1.png"
-          alt="Catalog 1"
-          className="w-full h-auto rounded-lg shadow-md"
+        <CarRentalCard
+          name="Koenigsegg"
+          type="Sport"
+          image1="/01.png"
+          image2="/Spesification1.png"
+          price="$99.00"
+          cutPrice=""
         />
-        <img
-          src="/Catalog 2.png"
-          alt="Catalog 2"
-          className="w-full h-auto rounded-lg shadow-md"
+
+        <CarRentalCard
+          name="Nissan GT - R"
+          type="Sport"
+          image1="/02.png"
+          image2="/Spesification2.png"
+          price="$80.00"
+          cutPrice="$100.00"
         />
-        <img
-          src="/Catalog 3.png"
-          alt="Catalog 3"
-          className="w-full h-auto rounded-lg shadow-md"
+
+        <CarRentalCard
+          name="Rolls - Royce"
+          type="Sedan"
+          image1="/03.png"
+          image2="/Spesification3.png"
+          price="$96.00"
+          cutPrice=""
         />
-        <img
-          src="/Catalog 4.png"
-          alt="Catalog 4"
-          className="w-full h-auto rounded-lg shadow-md"
+
+        <CarRentalCard
+          name="Nissan GT - R"
+          type="Sport"
+          image1="/04.png"
+          image2="/Spesification2.png"
+          price="$80.00"
+          cutPrice="$100.00"
         />
       </div>
     </div>
