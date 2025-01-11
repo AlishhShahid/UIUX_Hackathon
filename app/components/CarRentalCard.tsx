@@ -40,9 +40,11 @@ export default function CarRentalCard({name, type, image1, image2, price, cutPri
           <p className="text-lg font-semibold">{price}<span className="text-sm font-normal">/ day</span></p>
           <p className="text-gray-400 line-through text-sm">{cutPrice}</p>
         </div>
+        <Link href={"/detail"}> 
         <button className="px-4 py-2 text-white bg-blue-500 rounded-lg hover:bg-blue-600">
           Rent Now
         </button>
+        </Link>
       </div>
     </div>
   );
