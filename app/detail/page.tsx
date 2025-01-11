@@ -1,3 +1,5 @@
+"use client";
+
 import SideBar from "../components/SideBar";
 import Image from "next/image";
 import Link from "next/link";
