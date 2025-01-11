@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from "next/link";
 
 
 export default function CarRentalCard({name, type, image1, image2, price, cutPrice} : {name:string; type:string; image1:string; image2:string; price:string; cutPrice:string;}) {
